@@ -1,0 +1,420 @@
+{
+    "One Employer at left with one Employee at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One General at left with one Soldier at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One Master at left with one Apprentice at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One Officer at left with one Cadet at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One Leader at left with one Follower at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One Teacher at left with one Student at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One Doctor at left with one Patient at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One Manager at left with one Intern at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One Mentor at left with one Mentee at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One Husband at left with one Wife at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    },
+    "One human Friend at left with another human Friend at right": {
+        "left": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        },
+        "right": {
+            "gender": {
+                "man": 0.5,
+                "woman": 0.5
+            },
+            "race": {
+                "European": 0.2,
+                "East-asian": 0.24,
+                "African": 0.18,
+                "Latino": 0.12,
+                "South-Asian": 0.26
+            },
+            "age": {
+                "10~29 years old": 0.418,
+                "31~59 years old": 0.391,
+                "60 years old or older": 0.191
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+--prompt "One Employer at left with one Employee at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One General at left with one Soldier at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One Master at left with one Apprentice at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One Officer at left with one Cadet at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One Leader at left with one Follower at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One Teacher at left with one Student at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One Doctor at left with one Patient at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One Manager at left with one Intern at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One Mentor at left with one Mentee at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One Husband at left with one Wife at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+--prompt "One human Friend at left with another human Friend at right, looking at the camera, ultra quality, sharp focus, tack sharp, 8K UHD, hdr, high resolution, photorealism"
+
+
