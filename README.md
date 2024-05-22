@@ -19,6 +19,8 @@ This repository is supplement material for the paper: FAIntbench: A Holistic and
 * [StableDifussion XL Lightning](https://huggingface.co/ByteDance/SDXL-Lightning)
 * [PixArt Sigma](https://github.com/PixArt-alpha/PixArt-sigma)
 
+## 📈 Quantitive Result:
+
 ## 📌 Prerequesties
 Prerequesties are the same as the prequesties of CLIP and models you use. The Following are some useful links and tips:
 * [CLIP](https://github.com/openai/CLIP)
@@ -28,3 +30,4 @@ Prerequesties are the same as the prequesties of CLIP and models you use. The Fo
 
 ## 🌟 Usage!
 * First, use the prompts provided by us in prompt folder
+* Second, use CLIP API provided in preprocess named 1_img2metajson.py
