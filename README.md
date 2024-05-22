@@ -4,16 +4,10 @@ This repository is supplement material for the paper: FAIntbench: A Holistic and
 ## :books: Introduction
 
 * Clear and robust definition. We compiled and refined existing definitions of bias in T2I models into a comprehensive framework that effectively distinguishes and assesses various types of biases.
-<p align="center">
-  <img src="Figures/skills_metric.png" width="75%"/>
-</p>
 
 * Large prompt dataset. Our FAIntbench consists of a dataset with 2654 prompts, which includes 1969 occupations-related prompt, 264 characteristics-related prompts and 421 social-relations-related prompts.
 <p align="center">
-  <img src="Figures/pie_chart.png" width="75%"/>
+  <img src="Figures/fig4.png" width="75%"/>
 </p>
 
 * Multi-dimensional evaluation Metric. Our evaluation metrics for generative bias cover four dimensions and four levels for each model.
-<p align="center">
-  <img src="Figures/AC_metric.png" width="75%"/>
-</p>
