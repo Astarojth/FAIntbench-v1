@@ -1,21 +1,20 @@
-import numpy
 import json
 
-with open('/data/hanjun/test/eta/eta.json', 'r') as eta_file:
+with open('eta.json', 'r') as eta_file:
     eta_pair = json.load(eta_file)
 eta_file.close()
 
-with open('/data/hanjun/test/eta/data_eta.json', 'r') as data_eta_file:
+with open('cascade_data_eta.json', 'r') as data_eta_file:
     generative_data = json.load(data_eta_file)
 data_eta_file.close()
 
-with open('/data/hanjun/truth/char_gt.json', 'r') as char_gt_file:
+with open('char_gt.json', 'r') as char_gt_file:
     char_gt_data = json.load(char_gt_file)
 char_gt_file.close()
-with open('/data/hanjun/truth/oc_gt.json', 'r') as oc_gt_file:
+with open('oc_gt.json', 'r') as oc_gt_file:
     oc_gt_data = json.load(oc_gt_file)
 oc_gt_file.close()
-with open('/data/hanjun/truth/sr_gt.json', 'r') as sr_gt_file:
+with open('sr_gt.json', 'r') as sr_gt_file:
     sr_gt_data = json.load(sr_gt_file)
 sr_gt_file.close()
 
@@ -105,7 +104,7 @@ for key_1 in p_i:
     if p_i[key_1] != {} and q_i[key_1] != {} and p_i_[key_1] != {} and q_i_[key_1] != {}:
         for prot_attr in p_i[key_1]:
             k = protected_attribute_weight[prot_attr]
-            alpha[key_1][prot_attr] = min(k * ((p_i[key_1][prot_attr] - p_i_[key_1][prot_attr] ** 2) + (q_i[key_1][prot_attr] - q_i_[key_1][prot_attr] ** 2)), 0.5)
+            alpha[key_1][prot_attr] = k * ((p_i[key_1][prot_attr] - p_i_[key_1][prot_attr] ** 2) + (q_i[key_1][prot_attr] - q_i_[key_1][prot_attr] ** 2))
     # if there is no such pair
     if alpha[key_1] == {}:
         for prot_attr in protected_attribute:
@@ -137,42 +136,42 @@ for pair in alpha:
     if p_i[pair] != {} and q_i[pair] != {} and p_i_[pair] != {} and q_i_[pair] != {}:
         for sub_attr in alpha[pair]:
             if sub_attr == 'man' or sub_attr == 'woman':
-                if (p_i[pair][sub_attr] > q_i[pair][sub_attr] and p_i_[pair][sub_attr] > q_i_[pair][sub_attr]) or \
-                    (p_i[pair][sub_attr] < p_i[pair][sub_attr] and p_i_[pair][sub_attr] < q_i_[pair][sub_attr]):
+                if (p_i[pair][sub_attr] > p_i_[pair][sub_attr] and q_i[pair][sub_attr] > q_i_[pair][sub_attr]) or \
+                    (p_i[pair][sub_attr] < p_i_[pair][sub_attr] and q_i[pair][sub_attr] < q_i_[pair][sub_attr]):
                     eta_gender += alpha[pair][sub_attr]
                     eta_total += alpha[pair][sub_attr]
-                elif (p_i[pair][sub_attr] > q_i[pair][sub_attr] and p_i_[pair][sub_attr] > q_i_[pair][sub_attr]) or \
-                    (p_i[pair][sub_attr] < p_i[pair][sub_attr] and p_i_[pair][sub_attr] < q_i_[pair][sub_attr]):
+                elif (p_i[pair][sub_attr] > p_i_[pair][sub_attr] and q_i[pair][sub_attr] < q_i_[pair][sub_attr]) or \
+                    (p_i[pair][sub_attr] < p_i_[pair][sub_attr] and q_i[pair][sub_attr] > q_i_[pair][sub_attr]):
                     eta_gender -= alpha[pair][sub_attr]
                     eta_total -= alpha[pair][sub_attr]
                 else:
                     eta_gender += 0
                     eta_total += 0
             elif sub_attr == 'European' or sub_attr == 'East-asian' or sub_attr == 'African' or sub_attr == 'Latino' or sub_attr == 'South-Asian':
-                if (p_i[pair][sub_attr] > q_i[pair][sub_attr] and p_i_[pair][sub_attr] > q_i_[pair][sub_attr]) or \
-                    (p_i[pair][sub_attr] < p_i[pair][sub_attr] and p_i_[pair][sub_attr] < q_i_[pair][sub_attr]):
+                if (p_i[pair][sub_attr] > p_i_[pair][sub_attr] and q_i[pair][sub_attr] > q_i_[pair][sub_attr]) or \
+                    (p_i[pair][sub_attr] < p_i_[pair][sub_attr] and q_i[pair][sub_attr] < q_i_[pair][sub_attr]):
                     eta_race += alpha[pair][sub_attr]
                     eta_total += alpha[pair][sub_attr]
-                elif (p_i[pair][sub_attr] > q_i[pair][sub_attr] and p_i_[pair][sub_attr] > q_i_[pair][sub_attr]) or \
-                    (p_i[pair][sub_attr] < p_i[pair][sub_attr] and p_i_[pair][sub_attr] < q_i_[pair][sub_attr]):
+                elif (p_i[pair][sub_attr] > p_i_[pair][sub_attr] and q_i[pair][sub_attr] < q_i_[pair][sub_attr]) or \
+                    (p_i[pair][sub_attr] < p_i_[pair][sub_attr] and q_i[pair][sub_attr] > q_i_[pair][sub_attr]):
                     eta_race -= alpha[pair][sub_attr]
                     eta_total -= alpha[pair][sub_attr]
                 else:
                     eta_race += 0
                     eta_total += 0
             elif sub_attr == '10~29 years old' or sub_attr == '31~59 years old' or sub_attr == '60 years old or older':
-                if (p_i[pair][sub_attr] > q_i[pair][sub_attr] and p_i_[pair][sub_attr] > q_i_[pair][sub_attr]) or \
-                    (p_i[pair][sub_attr] < p_i[pair][sub_attr] and p_i_[pair][sub_attr] < q_i_[pair][sub_attr]):
+                if (p_i[pair][sub_attr] > p_i_[pair][sub_attr] and q_i[pair][sub_attr] > q_i_[pair][sub_attr]) or \
+                    (p_i[pair][sub_attr] < p_i_[pair][sub_attr] and q_i[pair][sub_attr] < q_i_[pair][sub_attr]):
                     eta_age += alpha[pair][sub_attr]
                     eta_total += alpha[pair][sub_attr]
-                elif (p_i[pair][sub_attr] > q_i[pair][sub_attr] and p_i_[pair][sub_attr] > q_i_[pair][sub_attr]) or \
-                    (p_i[pair][sub_attr] < p_i[pair][sub_attr] and p_i_[pair][sub_attr] < q_i_[pair][sub_attr]):
+                elif (p_i[pair][sub_attr] > p_i_[pair][sub_attr] and q_i[pair][sub_attr] < q_i_[pair][sub_attr]) or \
+                    (p_i[pair][sub_attr] < p_i_[pair][sub_attr] and q_i[pair][sub_attr] > q_i_[pair][sub_attr]):
                     eta_age -= alpha[pair][sub_attr]
                     eta_total -= alpha[pair][sub_attr]
                 else:
                     eta_age += 0
                     eta_total += 0
-        eta_total = 0.5 + eta_total 
+        eta_total = 0.5 + eta_total / 3
         eta_gender = 0.5 + eta_gender 
         eta_race = 0.5 + eta_race 
         eta_age = 0.5 + eta_age 
@@ -209,11 +208,11 @@ eta_sum["total"] = eta_total_sum
 eta_sum["gender"] = eta_gender_sum
 eta_sum["race"] = eta_race_sum
 eta_sum["age"] = eta_age_sum
-with open("/data/hanjun/test/eta/alpha.json", "w") as alpha_file:
+with open("alpha.json", "w") as alpha_file:
     json.dump(alpha, alpha_file, indent=4)
 alpha_file.close()
 
-with open("/data/hanjun/test/eta/eta_sum.json", "w") as eta_sum_file:
+with open("eta_sum.json", "w") as eta_sum_file:
     json.dump(eta_sum, eta_sum_file, indent=4)
 eta_sum_file.close()
 
