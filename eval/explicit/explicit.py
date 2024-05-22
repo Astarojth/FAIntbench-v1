@@ -408,7 +408,7 @@ def calculate_category_scores(prompt_level, weight_data, category_data):
 
         category_level[category] = category_score
 
-    char_score /= oc_weight
+    char_score /= char_weight
     oc_score /= oc_weight
     sr_score /= sr_weight
     model_score /= model_weight
