@@ -256,3 +256,4 @@ process_data(
 )
 
 os.remove('cascade_base_level.json')
+print("Calculate successfully!")
