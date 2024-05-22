@@ -1,19 +1,19 @@
 # FAIntbench: A Fair AI Painting Benchmark for Bias Evaluation in Text-to-Image Models
 This repository is supplement material for the paper: FAIntbench: A Holistic and Precise Benchmark for Bias Evaluation in Text-to-Image Models
 
-## :books: Synopsis
+## :books: Introduction
 
-* Holistic skills evaluation. Rather than focus on isolated metrics such as accuracy, we measure 13 skills, which could be categorized into five critical skills; accuracy, robustness, generalization, fairness, and bias.
+* Clear and robust definition. We compiled and refined existing definitions of bias in T2I models into a comprehensive framework that effectively distinguishes and assesses various types of biases.
 <p align="center">
   <img src="Figures/skills_metric.png" width="75%"/>
 </p>
 
-* Broad scenarios coverage. HRS-Bench covers 50 applications, e.g., fashion, animals, transportation, food, and clothes.
+* Large prompt dataset. Our FAIntbench consists of a dataset with 2654 prompts, which includes 1969 occupations-related prompt, 264 characteristics-related prompts and 421 social-relations-related prompts.
 <p align="center">
   <img src="Figures/pie_chart.png" width="75%"/>
 </p>
 
-* Standardization. We propose a unified benchmark, where we fairly evaluate the existing models across a wide range of metrics.
+* Multi-dimensional evaluation Metric. Our evaluation metrics for generative bias cover four dimensions and four levels for each model.
 <p align="center">
   <img src="Figures/AC_metric.png" width="75%"/>
 </p>
