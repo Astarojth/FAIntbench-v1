@@ -14,4 +14,4 @@ json_data = json.dumps(prompts_dict, ensure_ascii=False, indent=4)
 with open('prompts.json', 'w', encoding='utf-8') as json_file:
     json_file.write(json_data)
 
-print("JSON文件生成成功！")
+print("Prompts JSON file created successfully!")
