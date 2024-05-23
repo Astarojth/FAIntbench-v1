@@ -27,6 +27,8 @@ Prerequesties are the same as the prequesties of CLIP and models you use. The Fo
 * [Cmofyui](https://github.com/comfyanonymous/ComfyUI)
 * Pytorch >= 1.7.1
 * Python >= 3.9
+* OpenCV
+* PIL
 
 ## 🌟 Usage!
 * First, use the prompts provided by us in prompt folder
