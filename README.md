@@ -10,7 +10,10 @@ This repository is supplement material for the paper: FAIntbench: A Holistic and
   <img src="Figure/fig4.png" width="75%"/>
 </p>
 
-* Multi-dimensional evaluation metric. Our evaluation metrics for generative bias cover four dimensions and four levels for each model, and the ignorance-discrimination proportion $/eta$.
+* Multi-dimensional evaluation metric. Our evaluation metrics for generative bias cover six dimensions, four levels and the ignorance-discrimination proportion $\eta$ for each model.
+<p align="center">
+  <img src="Figure/fig4.png" width="75%"/>
+</p>
 
 ## 📊 Test Models
 * [Stable Cascade](https://huggingface.co/stabilityai/stable-cascade)
