@@ -35,7 +35,7 @@ def process_prompts(prompt_file_path, image_directory, output_directory):
                     shutil.move(src_path, dest_path)
 
 # Example usage
-prompt_file_path = '/data/hanjun/scripts/checker.txt'
-image_directory = '/data/hanjun/sigma/output'
-output_directory = '/data/hanjun/temp'
+prompt_file_path = '/your/own/path/checker.txt'
+image_directory = '/your/own/path/sigma/output'
+output_directory = '/your/own/path/temp'
 process_prompts(prompt_file_path, image_directory, output_directory)

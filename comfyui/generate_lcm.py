@@ -174,7 +174,7 @@ json_template = """
 }
 """
 
-filename = "/data/hanjun/prompts/pg/6.txt"
+filename = "/your/own/path/6.txt"
 iterations = 10
 for i in range(iterations):
     process_prompts(filename)
