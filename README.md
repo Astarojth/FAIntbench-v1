@@ -23,6 +23,9 @@ This repository is supplement material for the paper: FAIntbench: A Holistic and
 * [PixArt Sigma](https://github.com/PixArt-alpha/PixArt-sigma)
 
 ## 📈 Quantitive Result:
+<p align="center">
+  <img src="Figure/total.png" width="75%"/>
+</p>
 
 ## 📌 Prerequesties
 Prerequesties are the same as the prequesties of CLIP and models you use. The Following are some useful links and tips:
