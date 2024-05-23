@@ -12,7 +12,7 @@ This repository is supplement material for the paper: FAIntbench: A Holistic and
 
 * Multi-dimensional evaluation metric. Our evaluation metrics for generative bias cover six dimensions, four levels and the ignorance-discrimination proportion $`\eta`$ for each model.
 <p align="center">
-  <img src="Figure/fig3.png" width="75%"/>
+  <img src="Figure/fig6.png" width="50%"/> <img src="Figure/fig3.png" width="50%"/>
 </p>
 
 ## 📊 Test Models
