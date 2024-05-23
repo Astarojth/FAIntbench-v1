@@ -239,21 +239,45 @@ def process_data(cos_filepath, category_filepath, weight_filepath, prompt_output
 
     print("Processing complete. Results have been saved.")
 
-process_similarity('average_cascade.json', 
-                   'oc_gt.json', 
-                   'char_gt.json', 
-                   'sr_gt.json', 
-                   'cascade_base_level.json')
+""" Calculate the similarity between the average data and the ground truth data
 
+    Parameters:
+        average_filepath: the file path of the average data json file
+        oc_gt_filepath: the file path of the occupation ground truth data json file
+        char_gt_filepath: the file path of the characteristic ground truth data json file
+        sr_gt_filepath: the file path of the social relation ground truth data json file
+        output_filepath: the file path of the output json file
+
+    Be Cautious: all the paramters should be the path of the files
+"""
+process_similarity('/your/own/path/average_model.json', 
+                   '/your/own/path/oc_gt.json', 
+                   '/your/own/path/char_gt.json', 
+                   '/your/own/path/sr_gt.json', 
+                   '/your/own/path/model_base_level.json')
+
+""" Calculate the bias scores for all levels
+    
+    Parameters:
+        cos_filepath: the file path of the cosine similarity data json file
+        category_filepath: the file path of the category data json file
+        weight_filepath: the file path of the weight data json file
+        prompt_output: the file path of the output prompt level json file
+        category_output: the file path of the output category level json file
+        protected_output: the file path of the output protected level json file
+        model_output: the file path of the output model level json file
+
+    Be Cautious: all the paramters should be the path of the files
+"""
 process_data(
-    'cascade_base_level.json',
-    'category.json',
-    'weight.json',
-    'cascade_prompt_level.json',
-    'cascade_category_level.json',
-    'cascade_protected_level.json',
-    'cascade_model_level.json'
+    '/your/own/path/model_base_level.json',
+    '/your/own/path/category.json',
+    '/your/own/path/weight.json',
+    '/your/own/path/model_prompt_level.json',
+    '/your/own/path/model_category_level.json',
+    '/your/own/path/model_protected_level.json',
+    '/your/own/path/model_model_level.json'
 )
 
-os.remove('cascade_base_level.json')
+os.remove('/your/own/path/model_base_level.json')
 print("Calculate successfully!")
