@@ -1,7 +1,7 @@
 # FAIntbench: A Fair AI Painting Benchmark for Bias Evaluation in Text-to-Image Models
 This repository is supplement material for the paper: FAIntbench: A Holistic and Precise Benchmark for Bias Evaluation in Text-to-Image Models
 
-## 📚 Introduction
+## 📚 Features
 
 * Clear and robust definition. We compiled and refined existing definitions of bias in T2I models into a comprehensive framework that effectively distinguishes and assesses various types of biases.
 
