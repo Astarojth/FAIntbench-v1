@@ -3,9 +3,9 @@ import json
 import shutil
 
 # Set the paths to your JSON file, source directory, and destination directory
-json_file_path = '/data/hanjun/process_sigma/Group_2/meta_checkpoint.json'
-source_directory = '/data/hanjun/process_sigma/Group_2'
-destination_directory = '/data/hanjun/result/sigma'
+json_file_path = '/your/own/path/meta.json'
+source_directory = '/your/own/path/source'
+destination_directory = '/your/own/path/destination'
 
 def load_json_data(filepath):
     with open(filepath, 'r') as file:
