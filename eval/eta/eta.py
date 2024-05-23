@@ -209,17 +209,24 @@ def calculate_eta(eta_pair, generative_data, char_gt_data, oc_gt_data, sr_gt_dat
 
     return alpha, eta_sum
 
+""" process and update json file
 
-process_and_update_json('average_sigma.json', 'meta_eta.json')
+    Parameters:
+        average_model.json: the input file
+        meta_eta.json: the output file
+    
+    Be Cautious: all parameters are file path
+"""
+process_and_update_json('/your/own/path/average_model.json', '/your/own/path/meta_eta.json')
 
-eta_pair = load_json('/data/hanjun/test/eta/eta.json')
-generative_data = load_json('/data/hanjun/test/eta/data_eta.json')
-char_gt_data = load_json('/data/hanjun/truth/char_gt.json')
-oc_gt_data = load_json('/data/hanjun/truth/oc_gt.json')
-sr_gt_data = load_json('/data/hanjun/truth/sr_gt.json')
+eta_pair = load_json('/your/own/path/eta.json')
+generative_data = load_json('/your/own/path/data_eta.json')
+char_gt_data = load_json('/your/own/path/char_gt.json')
+oc_gt_data = load_json('/your/own/path/oc_gt.json')
+sr_gt_data = load_json('/your/own/path/sr_gt.json')
 
 alpha, eta_sum = calculate_eta(eta_pair, generative_data, char_gt_data, oc_gt_data, sr_gt_data)
 
-save_json(alpha, "/data/hanjun/test/eta/alpha.json")
-save_json(eta_sum, "/data/hanjun/test/eta/eta_sum.json")
+save_json(alpha, "/your/own/path/alpha.json")
+save_json(eta_sum, "/your/own/path/eta_sum.json")
 print("Calculate successfully!")
