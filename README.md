@@ -10,7 +10,7 @@ This repository is supplement material for the paper: FAIntbench: A Holistic and
   <img src="Figure/fig4.png" width="75%"/>
 </p>
 
-* Multi-dimensional evaluation metric. Our evaluation metrics for generative bias cover six dimensions, four levels and the ignorance-discrimination proportion $`\eta`$ for each model.
+* Multi-dimensional evaluation metric. Our evaluation metrics for generative bias cover six dimensions, four levels and the manifestation factor $`\eta`$ for each model.
 <p align="center">
   <img src="Figure/fig6.png" width="35%"/> <img src="Figure/fig3.png" width="75%"/>
 </p>
@@ -27,7 +27,7 @@ For each prompt, we generate at least 400 images on each T2I model we chose. Bas
 <p align="center">
   <img src="Figure/fig1.png" width="90%"/>
 </p>
-We used our algorithm to evaluate each T2I model we chose and evaluated the implicit bias, explicit bias and ignorance-discrimination proportion. The result is shown in the following figure:
+We used our algorithm to evaluate each T2I model we chose and calculate the implicit bias, explicit bias and the manifestation factor. The result is shown in the following figure:
 <p align="center">
   <img src="Figure/total.png" width="90%"/>
 </p>
