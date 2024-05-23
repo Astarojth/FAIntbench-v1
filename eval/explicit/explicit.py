@@ -420,20 +420,30 @@ def calculate_category_scores(prompt_level, weight_data, category_data):
 
     return category_level, acquired_level, model_level
 
+""" ganearte prompt level data 
 
-generate_new_data('average_cascade.json', 'cascade_prompt_level.json')
+    Parameters:
+        average_model.json: The path to the input file.
+        model_prompt_level.json: The path to the output file.
+    
+    Be Cautious: all parameters should be the path to the file.
+"""
+generate_new_data('average_model.json', 'model_prompt_level.json')
 
-prompt_level = load_json('/data/hanjun/test/explicit/cascade_prompt_level.json')
-category_data = load_json('/data/hanjun/test/category.json')
-weight_data = load_json('/data/hanjun/truth/weight.json')
+prompt_level = load_json('/your/own/path/model_prompt_level.json')
+category_data = load_json('/your/own/path/category.json')
+weight_data = load_json('/your/own/path/weight.json')
 
 protect_attr_level, protect_attr_weight, sub_attr_level, sub_attr_weight = calculate_levels(prompt_level, weight_data)
 protect_attr_level, sub_attr_level = normalize_levels(protect_attr_level, protect_attr_weight, sub_attr_level, sub_attr_weight)
 category_level, acquired_level, model_level = calculate_category_scores(prompt_level, weight_data, category_data)
 
-save_json(protect_attr_level,'/data/hanjun/test/explicit/ex_sub_attr_level.json')
-save_json(category_level,'/data/hanjun/test/explicit/ex_category_level.json')
-save_json(sub_attr_level,'/data/hanjun/test/explicit/ex_protected_attr_level.json')
-save_json(acquired_level,'/data/hanjun/test/explicit/ex_acquired_level.json')
-save_json(model_level,'/data/hanjun/test/explicit/ex_model_level.json')
+""" ATTENTION: while saving protect_attr_level and sub_attr_level, 
+               please switch the path name, because we made a mistake in the code.
+"""
+save_json(protect_attr_level,'/your/own/path/ex_sub_attr_level.json') # The protect_attr_level is actually the sub_attr_level
+save_json(category_level,'/your/own/path/ex_category_level.json')
+save_json(sub_attr_level,'/your/own/path/ex_protected_attr_level.json') # The sub_attr_level is actually the protect_attr_level
+save_json(acquired_level,'/your/own/path/ex_acquired_level.json')
+save_json(model_level,'/your/own/path/ex_model_level.json')
 print("Calculate successfully!")
