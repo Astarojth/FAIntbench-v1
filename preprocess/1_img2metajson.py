@@ -193,7 +193,10 @@ def process_two_people_prompt(prompt_path, device, model, preprocess):
 if __name__ == "__main__":
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model, preprocess = load_model(device)
-    result_path = "/your/own/image/path"
+    """the path of the folder containing the prompt folder which contains images
+       e.g. if your images are contained in /your/own/image/path/a photo of rich person/, 
+       then /your/own/image/path/ should be the result_path"""
+    result_path = "/your/own/image/path" 
     process_images(result_path, device, model, preprocess)
 
     

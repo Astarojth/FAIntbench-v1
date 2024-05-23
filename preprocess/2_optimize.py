@@ -261,6 +261,15 @@ def modify_keys_in_json(file_path):
     with open(file_path, 'w') as file:
         json.dump(modified_data, file, indent=4, ensure_ascii=False)
 
-process_and_save_image_data("sigma.json", "optimize_sigma.json")
-process_json('optimize_sigma.json', 'average_sigma.json')
-modify_keys_in_json('average_sigma.json')
+"""Process and save image data from 'model.json' to 'optimize_model.json'.
+   In here, the parameter should be the file path of the JSON file containing the image data."""
+process_and_save_image_data("/your/own/path/model.json", "/your/own/path/optimize_model.json")
+
+"""Process and save image data from 'average_model.json' to 'average_model.json'.
+   In here, the first parameter should be the file path of the JSON file containing the image data,
+   and the second parameter should be the file path where the processed data will be saved."""
+process_json('/your/own/path/optimize_model.json', '/your/own/path/average_model.json')
+
+"""Modify keys in the JSON file.
+    In here, the parameter should be the file path of the JSON file containing the data."""
+modify_keys_in_json('/your/own/path/average_model.json')
