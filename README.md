@@ -1,8 +1,8 @@
 # FAIntbench: A Fair AI Painting Benchmark for Bias Evaluation in Text-to-Image Models
 This repository is supplement material for the paper: FAIntbench: A Holistic and Precise Benchmark for Bias Evaluation in Text-to-Image Models
 
-:satellite: [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://drive.google.com/file/d/1Tx000qwAcCsmOE9b5XUzyqlh8-1yBJMP/view?usp=sharing) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-:book: [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+🛰️: [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://drive.google.com/file/d/1Tx000qwAcCsmOE9b5XUzyqlh8-1yBJMP/view?usp=sharing) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+📖: [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 ## 📚 Features
 
