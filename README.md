@@ -45,5 +45,7 @@ Prerequesties are the same as the prequesties of CLIP and models you use. The Fo
 * PIL
 
 ## 🌟 Usage!
-* First, use the prompts provided by us in prompt folder
-* Second, use CLIP API provided in preprocess named 1_img2metajson.py
+* First, use the prompts provided by us in prompt folder to generate images. 200 images for each prompt will be sufficient to get enough accuracy. The folder structure to store the result is: model_name/prompt_name/image.png
+* Second, use the image generanted in step 1 as input, run CLIP API "1_img2metajson.py" provided in preprocess folder "1_img2metajson.py". This script will output a json file containing the bias data of each model.
+* Third, use the json file generated in step 2 as input, run "2_optimize.py" provided in preprocess folder, which will also generate json files that is optimized.
+* Fourth, set the json path to each of the three implicit, explicit and eta scripts under eval for the implicit, explicit and eta script to get the result
