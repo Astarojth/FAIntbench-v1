@@ -129,7 +129,7 @@ def calculate_category_level(prompt_level, category_data, weight_data):
             'race': category_race_score,
             'age': category_age_score
         }
-#for calculating protected attribute level
+#for calculating acquired attribute level
     total_weight = 0
     for prompt_key in category_oc:
         for prompt in prompt_level:
@@ -275,7 +275,7 @@ process_data(
     '/your/own/path/weight.json',
     '/your/own/path/model_prompt_level.json',
     '/your/own/path/model_category_level.json',
-    '/your/own/path/model_protected_level.json',
+    '/your/own/path/model_acquired_level.json',
     '/your/own/path/model_model_level.json'
 )
 

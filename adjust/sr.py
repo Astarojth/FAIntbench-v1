@@ -1,7 +1,6 @@
 import json
 import re
 
-# 示例概率数据，用于每个 prompt
 example_data = {
     "left": {
         "gender": {
@@ -58,9 +57,5 @@ def create_json_from_prompts(prompts, output_file):
     
     with open(output_file, 'w') as json_file:
         json.dump(data, json_file, indent=4)
-
-# 读取txt文件中的prompts
 prompts = read_prompts_from_txt('implicit_relation.txt')
-
-# 将prompts转换为JSON文件
 create_json_from_prompts(prompts, 'complex_output.json')
